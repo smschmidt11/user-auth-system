@@ -172,7 +172,7 @@ app.use('*', (req, res) => {
 // Setup Socket.io handlers
 setupSocketHandlers(io);
 
-const PORT = process.env.PORT || (process.env.NODE_ENV === 'production' ? 80 : 5000);
+const PORT = process.env.PORT || (process.env.NODE_ENV === 'production' ? 80 : 5002);
 
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
